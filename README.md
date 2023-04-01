@@ -6,9 +6,24 @@ Kali Linux
 
 ## Immediately after installing 
 
-Update Kali Linux: 
+Update and Upgrade Kali Linux: 
 ```
 sudo apt update 
+sudo apt upgrade 
+```
+
+New user password
+```
+passwd
+sudo passwd root 
+```
+
+Add Standard User: 
+```
+useradd -m user1 
+sudo passwd user1 
+sudo usermod -a -G user1 
+Sudo chsh -s /bin/bash user1
 ```
 
 Install Git: 
@@ -82,6 +97,15 @@ Install GDebi Package Manager:
 ```
 sudo apt-get install gdebi -y
 ```
+
+### Also
+
+Upgrade Kali Linux to latest version: 
+```
+sudo apt dist-upgrade 
+```
+
+Install OpenVAS, an Open Source Vulnarability scanner 
 
 
 ========================================================================================================
