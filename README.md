@@ -1,6 +1,61 @@
-# OSCP-Notes 
+# Hacking-Notes 
+
 
 Kali Linux
+========================================================================================================
+
+## Immediately after installing 
+
+Update Kali Linux: 
+```sudo apt update ```
+
+Install Git: 
+```apt-get install git ```
+
+Create a Low-Level User: 
+```sudo adduser ‘name’ 
+sudo usermod -aG sudo ‘name’ ```
+
+Terminal Multiplexer: 
+```sudo apt install tilix ```
+
+Set Root User Password: 
+```sudo passwd root ```
+
+Install HTOP: 
+```sudo apt install htop ```
+
+Check Default Repository: 
+```vim /etc/apt/sources.list ```
+
+Install Python: 
+```sudo apt install python 
+python3 --version ```
+
+Install JAVA: 
+```sudo apt install default-jdk 
+Sudo apt-cache search openjdk ```
+
+Install Archive Manager: 
+```apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y ```
+
+Add Standard User: 
+```useradd -m user1 
+sudo passwd user1 
+sudo usermod -a -G user1 
+Sudo chsh -s /bin/bash user1```
+
+Install Tor: 
+```sudo apt install tor 
+sudo service tor start```
+
+Install VLC: 
+```sudo apt install vlc ```
+
+Install GDebi Package Manager: 
+```sudo apt-get install gdebi -y ```
+
+
 ========================================================================================================
 
 -   Set the Target IP Address to the `$ip` system variable  
